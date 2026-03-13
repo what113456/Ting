@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>個人履歷</title>
+
+<style>
+
+body{
+font-family: "Noto Sans TC", Arial;
+background:#f2f3f7;
+padding:40px;
+}
+
+.card{
+background:white;
+max-width:700px;
+margin:auto;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.avatar{
+width:80px;
+height:80px;
+border-radius:20px;
+background:linear-gradient(135deg,#4facfe,#6a5cff);
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:40px;
+font-weight:bold;
+}
+
+.header{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.student{
+margin-top:10px;
+color:#666;
+}
+
+.copy-btn{
+background:#1fb6a6;
+border:none;
+color:white;
+padding:6px 14px;
+border-radius:8px;
+cursor:pointer;
+}
+
+h2{
+margin-top:30px;
+}
+
+.skills{
+display:flex;
+gap:40px;
+}
+
+.skill-block{
+flex:1;
+}
+
+.footer{
+margin-top:30px;
+}
+
+.print-btn{
+margin-top:20px;
+background:#1fb6a6;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="header">
+
+<div class="avatar">
+王
+</div>
+
+<div>
+<div class="student">
+學生編號：<span id="sid">AU114054058</span>
+<button class="copy-btn" onclick="copyID()">複製學號</button>
+</div>
+
+<h1>陳薏婷</h1>
+
+<p>第一學年 · 亞洲大學 · 應屆生</p>
+
+</div>
+
+</div>
+
+
+<h2>個人簡介</h2>
+
+<p>
+熱愛學習與創作，對設計與新技術充滿興趣。
+目前就讀亞洲大學，希望未來能結合設計與科技領域發展。
+</p>
+
+
+<h2>學歷</h2>
+
+<p>
+亞洲大學<br>
+第一學年（在學）
+</p>
+
+
+<h2>技能</h2>
+
+<div class="skills">
+
+<div class="skill-block">
+<h3>設計</h3>
+<p>
+Photoshop<br>
+Illustrator<br>
+基礎視覺設計
+</p>
+</div>
+
+<div class="skill-block">
+<h3>電腦</h3>
+<p>
+Word / Excel<br>
+HTML / CSS<br>
+基礎 JavaScript
+</p>
+</div>
+
+</div>
+
+
+<h2>經歷</h2>
+
+<p>
+目前無正式工作經驗，持續學習設計與數位技能，
+希望未來能透過實習累積實務經驗。
+</p>
+
+
+<h2>聯絡方式</h2>
+
+<div class="footer">
+
+<p>Email</p>
+<p>cyting0216@gmail.com</p>
+
+<p>電話</p>
+<p>0916-808-897</p>
+
+</div>
+
+<button class="print-btn" onclick="window.print()">
+列印 / 另存為 PDF
+</button>
+
+</div>
+
+
+<script>
+
+function copyID(){
+
+const id = document.getElementById("sid").innerText
+
+navigator.clipboard.writeText(id)
+
+alert("已複製學號")
+
+}
+
+</script>
+
+</body>
+</html>
