@@ -117,6 +117,10 @@ cursor:pointer;
 目前就讀亞洲大學，希望未來能結合設計與科技領域發展。
 </p>
   
+<button onclick="playMusic()" style="margin-top:20px;padding:10px 20px;background:#1fb6a6;color:white;border:none;border-radius:8px;">
+播放音樂 🎵
+</button>
+  
 <img src="IMG_9625.jpeg" style="width:100%;max-height:300px;object-fit:cover;margin-top:20px;border-radius:12px;">
 <h2>學歷</h2>
 
@@ -149,9 +153,6 @@ HTML / CSS<br>
 </div>
 
 </div>
-<button onclick="playMusic()" style="margin-top:20px;padding:10px 20px;border:none;background:#1fb6a6;color:white;border-radius:8px;">
-播放音樂 🎵
-</button>
 
 <h2>經歷</h2>
 
@@ -181,15 +182,10 @@ HTML / CSS<br>
 
 
 <script>
-
 function copyID(){
-
 const id = document.getElementById("sid").innerText
-
 navigator.clipboard.writeText(id)
-
 alert("已複製學號")
-
 }
 
 function playMusic(){
